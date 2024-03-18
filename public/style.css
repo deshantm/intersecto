@@ -1,0 +1,105 @@
+/* Basic Reset */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Import */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Default text color for dark mode */
+    background-color: #121212; /* Default background for dark mode */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles as Default */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+#logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+button {
+    background-color: #262626;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Light Mode Styles if User Prefers */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    nav ul {
+        background-color: #333;
+    }
+
+    footer {
+        background-color: #333;
+    }
+
+    button {
+        background-color: #5D5C61;
+    }
+
+    button:hover {
+        background-color: #2E9CCA;
+    }
+}
+
+textarea {
+    width: 100%; /* Make textarea span the full width of its container */
+    min-height: 100px; /* Set a minimum height */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none; /* Disable manual resizing */
+    transition: all 0.2s; /* Smooth transition for size changes */
+}
